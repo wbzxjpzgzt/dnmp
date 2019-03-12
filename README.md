@@ -1,0 +1,2 @@
+# dnmp
+docker build lnmp
