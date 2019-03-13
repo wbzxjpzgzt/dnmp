@@ -73,7 +73,10 @@ mysql:
 #    
     MYSQL_ROOT_PASSWORD: "123456"
 #
-密码默认为123456，无法修改，docker-compose有bug，密码设置无效
+密码默认为123456，启动容器后登陆
+#
+#更新一下用户的密码 root用户密码为newpassword  
+mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 #
 docker-compose build
 #
