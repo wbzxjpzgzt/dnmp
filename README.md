@@ -92,6 +92,12 @@ docker-compose build
 #
   docker-compose up -d
 #
+修改完成后，出现bug pfm 9000 端口被占用，pkill杀掉fpm,然后重启
+#
+pkill php-fpm
+#
+/usr/sbin/php-fpm
+#
 访问完成！
 
 
