@@ -29,7 +29,7 @@ RUN rpm -Uvh   http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 RUN yum -y install php56w php56w-cli php56w-devel php56w-common php56w-embedded php56w-fpm php56w-gd php56w-mbstring php56w-mysqlnd php56w-opcache php56w-pdo php56w-xml  php56w-pdo  php56w-pecl-apcu   php56w-pecl-redis  php56w-pecl-xdebug  php56w-pecl-memcached  php56w-pecl-imagick  --skip-broken
 
-
+RUN yum -y install vixie-cron crontabs
 RUN yum clean all
 
 
