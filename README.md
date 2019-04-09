@@ -99,7 +99,23 @@ pkill php-fpm
 /usr/sbin/php-fpm
 #
 访问完成！
-
-
+#
+添加定时任务
+## 宿主机安装（centos7）crontab
+#
+yum install vixie-cron
+#
+service crond start
+#
+chkconfig crond on
+#
+yum install cronie
+#
+yum install vixie-cron
+#
+yum install cronie
+#
+yum -y install vixie-cron
+yum -y install crontabs
 ## 参考博客
 https://segmentfault.com/a/1190000015198153
