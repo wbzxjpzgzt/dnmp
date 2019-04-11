@@ -82,6 +82,7 @@ mysql> ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
 # 5.6 
 #
 update mysql.user set password=password("newpassword") where user="root";
+#  flush privileges;
 #
 docker-compose build
 #
